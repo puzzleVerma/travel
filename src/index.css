@@ -1,0 +1,529 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Volkhov:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 2% 10%;
+  margin-bottom: 5%;
+}
+
+@media screen and (max-width: 1000px) {
+  .navbar ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header img {
+    display: none;
+  }
+
+  .showcase{
+    position: relative;
+    top: -40vw;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .showcase{
+    position: relative;
+    top: -50vw;
+  }
+}
+
+body {
+  background: url("./assets/Decore.png") no-repeat right top;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+}
+
+.navbar .links {
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  padding: 0.5rem 2rem;
+  text-decoration: none;
+  color: black;
+}
+
+.signup{
+  border: 2px solid #212832;
+  border-radius: 5px;
+}
+
+.screen {
+  margin-left: 10%;
+  margin-bottom: 10%;
+  height: 40vw;
+  width: 60%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  /* align-items: center; */
+}
+
+.showcase {
+  margin-left: 10%;
+  height: 80vh;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+}
+
+
+.showcase .tag {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.75vh;
+  font-weight: 700;
+  color: #DF6951;
+  margin-bottom: 1rem;
+}
+
+.showcase .overlay {
+  font-family: 'Volkhov', serif;
+  font-size: 3vw;
+  margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 1200px) {
+  .showcase .overlay {
+    font-family: 'Volkhov', serif;
+    font-size: 5vh;
+    margin-bottom: 1rem;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .showcase .overlay {
+    font-family: 'Volkhov', serif;
+    font-size: 2.5vh;
+    margin-bottom: 1rem;
+  }
+}
+
+.showcase .desc {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.5vh;
+  font-weight: 500;
+  color:#5E6282;
+  margin-bottom: 2rem;
+  ;
+}
+
+/* .buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+
+.buttons .links-fmo {
+  background: #F1A501;
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-size: 1.25vw;
+  font-weight: 500;
+  padding: 1vw 2vw;
+  margin-right: 2vw;
+  border-radius: 1vw;
+  text-decoration: none;
+  color: white;
+}
+
+.buttons .links-pd {
+  white-space: pre-wrap;
+  background: url("./assets/Playb.png") no-repeat left;
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-size: 1.25vw;
+  font-weight: 500;
+  padding: 4vw 5vw;
+  margin: 0 2rem;
+  border-radius: 1rem;
+  text-decoration: none;
+  color: black;
+}
+
+@media screen and (max-width: 1400px) {
+  .links-pd {
+    display: none;
+  }
+}
+
+.traveller {
+  width: 25%;
+  margin: 0;
+}
+
+
+.traveller img {
+  position: absolute;
+  left: 50%;
+  padding: 0;
+  height: 80%;
+}
+
+@media screen and (max-width: 1000px) {
+  .traveller {
+    display: none;
+  }
+}
+
+.services {
+  margin: 10vh 10vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 1000px) {
+  .services {
+    margin: 5vh 10vw;
+}}
+
+@media screen and (max-width: 580px) {
+  .services {
+    margin: 20vh 10vw;
+}}
+
+.cat{
+  font-family: 'Poppins', sans-serif;
+  align-items: center;
+  font-size: 1vw;
+
+}
+
+.wobs{
+  font-family: 'Volkhov', serif;
+  font-size: 3vw;
+}
+
+.offers{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 5vh 10vw;
+}
+
+@media screen and (max-width: 1000px) {
+  .offers{
+    display: flex;
+    flex-direction: column;
+    margin: 2.5vw 10vw;
+  }
+
+  .offer h4 {
+    display: none;
+  }
+}
+
+.offer-a img {
+  height: 15vh;
+  position: relative;
+  top: -20px;
+  left: -10px;
+}
+
+.offer-a h3 {
+  position: relative;
+  top: -4vh;
+}
+
+.offer-a h4 {
+  position: relative;
+  top: -4vh;
+}
+
+.offer {
+  text-align: center;
+  padding: 2vh 2vw;
+  height: 16vw;
+  width: 15vw;
+  /* border: black 2px solid; */
+  margin: 5vh 1vw;
+}
+
+.offer h3{
+  font-size: 1.15vw;
+  font-family: 'Open Sans', sans-serif;
+  padding: 1vh 0;
+}
+
+.offer h4{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  color: #5E6282;
+}
+
+.topdes {
+  margin: 10% 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.places{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 0vh 5vw;
+}
+
+.place {
+  text-align: center;
+  /* border: black 2px solid; */
+  margin: 5vh 2vw;
+  border-radius: 2vw;
+  padding-bottom: 2vh;
+  box-shadow: 1vh 2vh 2vw rgba(0, 0, 0, 0.2)
+}
+
+.place h4{
+  font-size: 1vw;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  color: #5E6282;
+  text-align: left;
+  padding: 0 1vw;
+}
+
+.place h4 .price {
+  text-align: right;
+  position: relative;
+  top: -3vh;
+}
+
+.place img{
+  border-start-start-radius: 2vw;
+}
+
+.places .tripday {
+  font-size: 1vw;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  color: #5E6282;
+  text-align: left;
+  padding: 0 1vw;
+}
+
+.tripday img {
+  padding: 0 0.75vw;
+  position: relative;
+  top: 0.5vh;
+}
+
+
+.bookat {
+  margin: 10vw 10vw;
+  display: flex;
+  flex-direction: row;
+}
+
+.step {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 2vh 0vw;
+}
+
+.step-desp{
+  padding-right: 4vw;
+}
+
+@media screen and (max-width: 1000px) {
+  .step-desp .tripday {
+    display: none;
+  }
+
+  .shalf {
+    display: none;
+  }
+
+  .step {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  .bookat {
+    text-align: center;
+    width: 100vw;
+    margin: 0 25vw;
+  }
+}
+
+.step img {
+  margin: 1vh;
+  margin-right: 2vw;
+}
+
+.fhalf {
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  margin: 0 2.5vw;
+  padding-right: 8vw;
+}
+
+.fhalf .places {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    margin: 0vh 5vw;
+}
+
+.shalf {
+  position: relative;
+  top: -12.5vh;
+}
+
+
+.subs {
+  margin: 10% 10%;
+  background-color: #DFD7F9;
+  height: 50vh;
+  border-radius: 1vw;
+  border-top-left-radius: 8vw;
+  padding: 10vh 10vw;
+}
+
+.subs-desp {
+  font-size: 2vw;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  color: #5E6282;
+  text-align: center;
+}
+
+.subs-email {
+  padding: 5vh 5vw;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.subs-email img {
+  padding: 1vh 2vw;
+  position: relative;
+  top: 5.75vh
+}
+
+.text-box{
+  width: 25vw;
+  height: 10vh;
+  padding: 0vh 2vw;
+  border-radius: 1vw;
+  border: #5E6282 0px solid;
+}
+
+.text-box::placeholder {
+  background: url(./assets/Email.png) no-repeat left top;
+  background-position: 2px 2px;
+  padding: 0 4vw;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.25vw;
+  color: #39425D;
+  opacity: 1;
+}
+
+@media screen and (max-width: 1000px) {
+  .text-box::placeholder {
+    background: white;
+    color: transparent;
+  }
+}
+
+.footer {
+  margin: 10% 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.company {
+  width: 15vw;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  padding: 2vh 4vw;
+  text-align: center;
+}
+
+.company .tag {
+  margin-bottom: 4vh;
+}
+
+.foot-logo {
+  width: 15vw;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 5vh;
+  padding: 0vh 1vh;
+}
+
+@media screen and (max-width: 1000px) {
+  .foot-logo {
+    display: none;
+  }
+
+  .discover {
+    display: none;
+  }
+
+  .company {
+    width: 25vw;
+  }
+}
+
+.foot-logo h1 {
+  font-size: 7.5vh;
+  margin-bottom: 5vh;
+}
+
+.foot-logo h4 {
+  font-size: 1.75vh;
+  color: #5E6282;
+}
+
+.discover {
+  background: url(./assets/Discover.png) no-repeat center;
+  width: 15vw;
+  height: 25vh;
+  margin-left: 2.5vw;
+}
+
+.foot-desp {
+  color: #5E6282;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  padding: 1vh 0;
+}
+
+.bottommost {
+  text-align: center;
+  margin-bottom: 5vh;
+  color: #5E6282;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+}
